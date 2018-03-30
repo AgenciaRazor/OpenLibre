@@ -1,0 +1,54 @@
+﻿<Page x:Class="OpenLibre.Paginas.Logim"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      xmlns:local="clr-namespace:OpenLibre"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="Logim">
+    <Border Background="#fafafa">
+        <!--Grid-->
+        <Grid>
+            
+            <ScrollViewer VerticalScrollBarVisibility="Auto" HorizontalScrollBarVisibility="Auto">
+                                
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextAlignment="Center">
+
+                    <Border Background="#525859"
+                            CornerRadius="5"
+                            Padding="15 10 15 15"
+                            Width="300"
+                            Margin="50 20 50 0">
+                        <!--Dados-->
+                        <StackPanel>
+                            <!--Logo Do Pograma-->
+                            <StackPanel>
+                                <TextBlock FontSize="20" Text="Login" Foreground="#fefefe">
+                                </TextBlock>
+                            </StackPanel>
+                            <!--Usario-->
+                            <Label Content="Usuário" FontSize="25" Foreground="#fefefe"/>
+                            <TextBox Style="{StaticResource Botao}" Tag="{Binding ValorVazio,Mode=OneWay}" Text="{Binding Usuario,Mode=TwoWay}"></TextBox>
+                            <!--Senha-->
+                            <Label Content="Senha" FontSize="25" Foreground="#fefefe"/>
+                            <PasswordBox Style="{StaticResource BotaoPassword}" >
+                                <i:Interaction.Behaviors>
+                                    <local:PasswordBoxBindingBehavior senha="{Binding senha}"/>
+                                </i:Interaction.Behaviors>
+                            </PasswordBox>
+                            <!--Botão Conectar-->
+                            <Button Command="{Binding Comando_Conectar}" Style="{StaticResource TextButton}" Content="Conectar"></Button>
+                        </StackPanel>
+                    </Border>
+                    <Button  Command="{Binding Comando_Registrar}" Style="{StaticResource BotaoDeTexto}"
+                            Content="Registre-se" VerticalAlignment="Top"/>
+
+
+                </StackPanel>
+            </ScrollViewer>
+        </Grid>
+        
+    </Border>
+</Page>

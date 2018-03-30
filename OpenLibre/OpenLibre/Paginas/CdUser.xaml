@@ -1,0 +1,125 @@
+﻿<Page x:Class="OpenLibre.Paginas.CdUser"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OpenLibre.Paginas"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="CdUser">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+
+        <Border Grid.Column="0"  Background="#525859">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--Usuario Logado-->
+                <StackPanel Grid.Row="0" Margin="12" Orientation="Horizontal">
+                    <TextBlock Margin="8 0 0 0" FontFamily="{StaticResource FontAwesome}" 
+                               FontSize="40" 
+                               HorizontalAlignment="Left" 
+                               Foreground="White" 
+                               Text="&#xf2bd;"></TextBlock>
+                    <TextBlock Margin="8 0 0 0" FontSize="20" Foreground="White">Allan</TextBlock>
+                </StackPanel>
+                <!--StackPanel Pra Conter Os itens-->
+                <StackPanel Grid.Row="1" HorizontalAlignment="Left" Margin="0">
+                    <!--Casinha-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <!--Icone-->
+                        <TextBlock 
+                            Style="{StaticResource TextblocStyle}"
+                            Text="&#xf015;">
+                        </TextBlock>
+                        <!--Texto Com Comando-->
+                        <Button Command="{Binding Comando_Home}" Style="{StaticResource Comando}" Content="Home" ></Button>
+                    </StackPanel>
+                    <!--Emprestimo-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <!--icone-->
+                        <TextBlock Margin="2 0 0 0" Style="{StaticResource TextblocStyle}" Text="&#xf02d;"></TextBlock>
+                        <Button Command="{Binding Comando_livros}" Style="{StaticResource Comando}" Content="Livro"></Button>
+                    </StackPanel>
+                    <!--Cadastro De Usuarios-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <TextBlock Margin="5 0 10 0" Style="{StaticResource TextblocStyle}" Text="&#xf007;"></TextBlock>
+                        <Button Style="{StaticResource Comando}" Foreground="Orange" Content="Cadastro"></Button>
+                    </StackPanel>
+                    <!--Alugeu De Livros-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <TextBlock Style="{StaticResource TextblocStyle}" Text="&#xf2b9;"></TextBlock>
+                        <Button Command="{Binding Comando_Aluguel}" Style="{StaticResource Comando}" Content="Aluguel"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+
+        <!--Conteudo Da Pagina-->
+        <Border Grid.Column="1" Grid.Row="1" Background="#fefefe">
+            <Grid>
+                <StackPanel Margin="75 130 75 0">
+                    <!--Nome do Usuário-->
+                    <Grid Margin="0 10 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock VerticalAlignment="Center"
+                                    Grid.Column="0"
+                                   FontFamily="Arial"
+                                   FontSize="20"
+                                   Text="Nome">
+                        </TextBlock>
+                        <TextBox Text="{Binding nome}" Tag="{Binding xnome}" Margin="8 0 0 0" Grid.Column="1" Style="{StaticResource Botao1}"></TextBox>
+                    </Grid>
+                    <!--CPF-->
+                    <Grid Margin="0 30 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                    Grid.Column="0"
+                                   FontFamily="Arial"
+                                   FontSize="20"
+                                   Text="CPF">
+                        </TextBlock>
+                        <TextBox MaxLength="11" Text="{Binding cpf}" Tag="{Binding xcpf}" Margin="20 0 0 0" Grid.Column="1" Style="{StaticResource Botao1}"></TextBox>
+                    </Grid>
+                    <!--Celular-->
+                    <Grid Margin="0 30 0 0">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <TextBlock VerticalAlignment="Center"
+                                   HorizontalAlignment="Center"
+                                    Grid.Column="0"
+                                   FontFamily="Arial"
+                                   FontSize="18"
+                                   Text="Celular">
+                        </TextBlock>
+                        <TextBox MaxLength="11" Text="{Binding celular}" Tag="{Binding xcelular}" Margin="4 0 0 0" Grid.Column="1" Style="{StaticResource Botao1}"></TextBox>
+                    </Grid>
+                    <Grid Margin="0 30 0 0">
+                        <Button Command="{Binding Comando_Cadastrar}" Style="{StaticResource TextButton}" Content="Cadastrar"></Button>
+                    </Grid>
+                </StackPanel>
+            </Grid>
+        </Border>
+        
+    </Grid>
+</Page>

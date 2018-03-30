@@ -1,0 +1,75 @@
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\MainWindow.g.cs
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\App.g.cs
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\OpenLibre_MarkupCompile.cache
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\OpenLibre_MarkupCompile.lref
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\OpenLibre.exe.config
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\OpenLibre.exe
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\OpenLibre.pdb
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\Microsoft.Windows.Shell.dll
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\Microsoft.Windows.Shell.pdb
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\MainWindow.baml
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\OpenLibre.g.resources
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\OpenLibre.Properties.Resources.resources
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\OpenLibre.csproj.GenerateResource.Cache
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\OpenLibre.exe
+c:\users\allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\OpenLibre.pdb
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\App.baml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\EstilosButões.baml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\Logim.g.cs
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\Logim.baml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\Registro.g.cs
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\Registro.baml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\PaginaPrincipal.g.cs
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\PaginaPrincipal.baml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\Livro.g.cs
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\Livro.baml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\CdUser.g.cs
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\CdUser.baml
+C:\Users\Allan\documents\visual studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\OpenLibre.csprojResolveAssemblyReference.cache
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\Aluguel.g.cs
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\obj\Debug\Paginas\Aluguel.baml
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\MySql.Data.dll
+C:\Users\Allan\Documents\Visual Studio 2017\Projects\OpenLibre\OpenLibre\bin\Debug\MySql.Data.xml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\OpenLibre.exe.config
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\OpenLibre.exe
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\OpenLibre.pdb
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\Microsoft.Windows.Shell.dll
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\Microsoft.Windows.Shell.pdb
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\MySql.Data.xml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre.csprojResolveAssemblyReference.cache
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\MainWindow.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\Aluguel.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\CdUser.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\Livro.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\Logim.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\PaginaPrincipal.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\Registro.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\App.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre_MarkupCompile.cache
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre_MarkupCompile.lref
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\App.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\EstilosButões.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\MainWindow.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\Aluguel.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\CdUser.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\Livro.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\Logim.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\PaginaPrincipal.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\Paginas\Registro.baml
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre.g.resources
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre.Properties.Resources.resources
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre.csproj.GenerateResource.cache
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre.csproj.CoreCompileInputs.cache
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre.csproj.CopyComplete
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre.exe
+C:\Users\Allan\Desktop\OpenLibre\OpenLibre\obj\Debug\OpenLibre.pdb

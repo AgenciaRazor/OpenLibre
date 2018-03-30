@@ -1,0 +1,75 @@
+﻿<Page x:Class="OpenLibre.Paginas.PaginaPrincipal"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OpenLibre.Paginas"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="PaginaPrincipal">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Column="0"  Background="#525859">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <!--Usuario Logado-->
+                <StackPanel Grid.Row="0" Margin="12" Orientation="Horizontal">
+                    <TextBlock Margin="8 0 0 0" FontFamily="{StaticResource FontAwesome}" 
+                               FontSize="40" 
+                               HorizontalAlignment="Left" 
+                               Foreground="White" 
+                               Text="&#xf2bd;"></TextBlock>
+                    <TextBlock Margin="8 0 0 0" FontSize="20" Foreground="White">Allan</TextBlock>
+                </StackPanel>
+                <!--StackPanel Pra Conter Os itens-->
+                <StackPanel Grid.Row="1" HorizontalAlignment="Left" Margin="0">
+                    <!--Casinha-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <!--Icone-->
+                        <TextBlock 
+                            Style="{StaticResource TextblocStyle}"
+                            Text="&#xf015;">
+                        </TextBlock>
+                        <!--Texto Com Comando-->
+                        <Button Style="{StaticResource Comando}" Content="Home" Foreground="Orange"></Button>
+                    </StackPanel>
+                    <!--Livros-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <!--icone-->
+                        <TextBlock Margin="2 0 0 0" Style="{StaticResource TextblocStyle}" Text="&#xf02d;"></TextBlock>
+                        <Button Command="{Binding Comando_livro}" Style="{StaticResource Comando}" Content="Livro"></Button>
+                    </StackPanel>
+                    <!--Cadastro De Usuarios-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <TextBlock Margin="5 0 10 0" Style="{StaticResource TextblocStyle}" Text="&#xf007;"></TextBlock>
+                        <Button Command="{Binding Comando_Cadastro_Usuario}" Style="{StaticResource Comando}" Content="Cadastro"></Button>
+                    </StackPanel>
+                    <!--Aluguel-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <TextBlock Style="{StaticResource TextblocStyle}" Text="&#xf2b9;"></TextBlock>
+                        <Button Command="{Binding Comando_Aluguel}" Style="{StaticResource Comando}" Content="Aluguel"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <!--Conteudo-->
+        <Border Grid.Column="2" Grid.Row="1">
+            <Grid Background="#fefefe">
+                <TextBlock FontSize="100" HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="DimGray" >Home</TextBlock>
+        </Grid>
+        </Border>
+        
+        
+    </Grid>
+</Page>

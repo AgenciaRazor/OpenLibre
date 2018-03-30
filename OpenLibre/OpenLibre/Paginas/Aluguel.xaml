@@ -1,0 +1,156 @@
+﻿<Page x:Class="OpenLibre.Paginas.Aluguel"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:OpenLibre.Paginas"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="800"
+      Title="Aluguel">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <!--Menu-->
+        <Border Grid.Column="0" Background="#525859">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="65"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <StackPanel Grid.Row="0" Margin="12" Orientation="Horizontal">
+                    <TextBlock Margin="8 0 0 0" FontFamily="{StaticResource FontAwesome}" 
+                               FontSize="40" 
+                               HorizontalAlignment="Left" 
+                               Foreground="White" 
+                               Text="&#xf2bd;"></TextBlock>
+                    <TextBlock Margin="8 0 0 0" FontSize="20" Foreground="White">Allan</TextBlock>
+                </StackPanel>
+                <!--StackPanel Pra Conter Os itens-->
+                <StackPanel Grid.Row="1" HorizontalAlignment="Left" Margin="0">
+                    <!--Casinha-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <!--Icone-->
+                        <TextBlock Style="{StaticResource TextblocStyle}" Text="&#xf015;"></TextBlock>
+                        <!--Texto Com Comando-->
+                        <Button Command="{Binding Comando_Casa}" Style="{StaticResource Comando}" Content="Home"></Button>
+                    </StackPanel>
+                    <!--Livros-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <!--icone-->
+                        <TextBlock Margin="2 0 0 0" Style="{StaticResource TextblocStyle}" Text="&#xf02d;"></TextBlock>
+                        <Button Command="{Binding Comando_Livro}" Style="{StaticResource Comando}" Content="Livro"></Button>
+                    </StackPanel>
+                    <!--Cadastro De Usuarios-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <TextBlock Margin="5 0 10 0" Style="{StaticResource TextblocStyle}" Text="&#xf007;"></TextBlock>
+                        <Button Command="{Binding Comando_CD_Usuario}" Style="{StaticResource Comando}" Content="Cadastro"></Button>
+                    </StackPanel>
+                    <!--Aluguel-->
+                    <StackPanel Orientation="Horizontal" Margin="0 5 10 0">
+                        <TextBlock Style="{StaticResource TextblocStyle}" Text="&#xf2b9;"></TextBlock>
+                        <Button Style="{StaticResource Comando}" Content="Aluguel" Foreground="Orange"></Button>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+
+        <!--Conteudo Da Pagina -->
+        <Border Grid.Column="1" Background="#fefefe">
+            <Grid>
+                <TabControl   Margin="0 10" BorderThickness="0" HorizontalAlignment="Stretch">
+                    <TabItem  Style="{StaticResource tabItem}"  Header="Aluguel" Margin="20,0,-41,0" Width="75">
+                        <Grid>
+                            <StackPanel Margin="75 120 75 0">
+                                <!--Codigo Do Usuário-->
+                                <Grid Margin="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <TextBlock Text="Código Usuário" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                                    <TextBox Text="{Binding Codigo_Usuario,UpdateSourceTrigger=PropertyChanged}" Tag="{Binding Xcodigo_Usuario}" Margin="10 0 0 0" Grid.Column="1" Style="{StaticResource Botao1}"></TextBox>
+                                </Grid>
+                                <!--Data Template para Usuario-->
+                                <ListBox BorderThickness="0" ItemsSource="{Binding Dados_Usuarios}">
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Border>
+                                                <StackPanel>
+                                                    <TextBlock Text="Usuário"  HorizontalAlignment="Center"></TextBlock>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="{Binding nome}" HorizontalAlignment="Center" Margin="0 0 0 0"></TextBlock>
+                                                    </StackPanel>
+                                                </StackPanel>
+                                            </Border>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                                <!---->
+                 <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Código Livro" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                    <TextBox Text="{Binding Codigo_Livro,UpdateSourceTrigger=PropertyChanged}" Tag="{Binding Xcodigo_Livro}" Margin="35 0 0 0" Grid.Column="1" Style="{StaticResource Botao1}"></TextBox>
+                </Grid>
+                <Grid>
+                      <ListBox BorderThickness="0" ItemsSource="{Binding Dados_Livro}">
+                              <ListBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                                    <TextBlock>livro</TextBlock>
+                                                    <StackPanel Orientation="Horizontal">
+                                                        <TextBlock Text="{Binding nome}"></TextBlock>
+                                                        <TextBlock Text="{Binding Estado}" Margin="10 0 0 0"></TextBlock>
+                                                    </StackPanel>
+                                                </StackPanel>                                         
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                     </ListBox>
+                </Grid>
+                <Button Command="{Binding Comando_Aluguel}" Style="{StaticResource TextButton}" Content="Alugar" Height="50"></Button>
+             
+            </StackPanel>
+        </Grid>
+      </TabItem>
+            <!--Descadastrar -->
+      <TabItem Style="{StaticResource tabItem}" Header="Devolução" Margin="37,0,-43,0" Width="89">
+         <Grid>
+         <StackPanel Margin="75 120 75 0">
+             <!--Dados do livro-->
+                 <Grid Margin="10">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+                    <TextBlock Text="Código Livro" FontSize="20" VerticalAlignment="Center"></TextBlock>
+                   <TextBox Tag="{Binding Xcodigo_Livro2}" Text="{Binding Codigo_Livro2,UpdateSourceTrigger=PropertyChanged}" Margin="35 0 0 0" Grid.Column="1" Style="{StaticResource Botao1}"></TextBox>
+                </Grid>
+                                            <ListBox BorderThickness="0" ItemsSource="{Binding Dados_Livro2}">
+                                                <ListBox.ItemTemplate>
+                                                    <DataTemplate>
+                                                        <StackPanel>
+                                                            <TextBlock>livro</TextBlock>
+                                                            <StackPanel Orientation="Horizontal">
+                                                                <TextBlock Text="{Binding nome}"></TextBlock>
+                                                                <TextBlock Text="{Binding Estado}" Margin="10 0 0 0"></TextBlock>
+                                                            </StackPanel>
+                                                        </StackPanel>
+                                                    </DataTemplate>
+                                                </ListBox.ItemTemplate>
+                                            </ListBox>
+                                            <Button Style="{StaticResource TextButton}" Content="Devolver" Command="{Binding Comando_Devolucao}" Height="50"></Button>
+          </StackPanel>
+        </Grid>      
+                 </TabItem>
+                </TabControl>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

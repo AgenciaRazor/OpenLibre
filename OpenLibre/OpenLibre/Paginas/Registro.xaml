@@ -1,0 +1,77 @@
+﻿<Page x:Class="OpenLibre.Paginas.Registro"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      xmlns:local="clr-namespace:OpenLibre"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="600"
+      Title="Registro">
+    <!--Borda da Pagina-->
+    <Border Background="#ffffff">
+        <Grid>
+            
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" TextBlock.TextAlignment="Center">
+                <!--Borda que ira conter os elementos-->
+                <Border Padding="0 0 0 8" 
+                        Margin="100 25 100 0"   
+                        CornerRadius="2"
+                        Width="300"
+                        BorderBrush="#ffffff"
+                        Background="#525859">
+                    <!--Dados-->
+                    <StackPanel>
+                        <TextBlock Text="Registre-se" FontSize="30" Margin="10" Foreground="#fefefe"></TextBlock>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Foreground="#fefefe" FontSize="20" VerticalAlignment="Center">Nome</Label>
+                            <TextBox Text="{Binding nome,Mode=TwoWay}" MaxLength="14" Tag="{Binding xnome,Mode=TwoWay}"  Grid.Column="1" Style="{StaticResource Botao}" Margin="5 10 10 5"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Foreground="#fefefe" FontSize="15" VerticalAlignment="Center">Usuario</Label>
+                            <TextBox Text="{Binding Usuario,Mode=TwoWay}" MaxLength="14" Tag="{Binding xUsuario,Mode=TwoWay}" Grid.Column="1" Style="{StaticResource Botao}" Margin="8 10 10 5"></TextBox>
+                        </Grid>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Foreground="#fefefe" FontSize="20" VerticalAlignment="Center">Senha</Label>
+                            <PasswordBox Grid.Column="1" Style="{StaticResource BotaoPassword}" Margin="5 10 10 5">
+                                <i:Interaction.Behaviors>
+                                    <local:PasswordBoxBindingBehavior senha="{Binding senha}"/>
+                                </i:Interaction.Behaviors>
+                            </PasswordBox>
+                        </Grid>
+                       
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                                <ColumnDefinition Width="10"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Grid.Column="0" Foreground="#fefefe" FontSize="15" VerticalAlignment="Center" HorizontalAlignment="Center">CPF</Label>
+                            <TextBox Text="{Binding Cpf,Mode=TwoWay}" MaxLength="11" Tag="{Binding xCpf,Mode=TwoWay}" Grid.Column="1"  Style="{StaticResource Botao}" Margin="35 10 10 5"></TextBox>
+                        </Grid>
+                        <Button  Style="{StaticResource TextButton}" Command="{Binding Comando_Registrar}" Margin="10"
+                            Content="Cadastrar" VerticalAlignment="Top"/>
+                    </StackPanel>
+                </Border>
+                <Button Style="{StaticResource BotaoDeTexto}" Command="{Binding Comando_Voltar}" Content="Voltar"></Button>
+            </StackPanel>
+            
+        </Grid>
+    </Border>
+    
+</Page>

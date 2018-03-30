@@ -1,0 +1,92 @@
+﻿<Window x:Class="OpenLibre.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OpenLibre"
+        mc:Ignorable="d"
+        WindowStyle="None"
+        AllowsTransparency="True"
+        Icon="imagens\Livro.ico"
+        MinWidth="{Binding larguraMinima_Da_Janela}"
+        MinHeight="{Binding AlturaMiima_Da_janela}"
+        WindowStartupLocation="CenterScreen"
+        Title="Livros" Height="350" Width="525">
+    <Window.Resources>
+        <Style TargetType="{x:Type local:MainWindow}">
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Window}">
+                        <!--Borda de fora -->
+                        <Border Background="Azure" CornerRadius="16 16 16 16">
+                            <!-- Janela Principal Fora de Linha-->
+                            <Grid>
+                                
+                                <!--Raio da janela -->
+                                <Border Background="#fafafa" CornerRadius="16 16 16 16"/>
+                                <!--Janela Principal-->
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <!--Barra de Titulos-->
+                                    <RowDefinition Height="{Binding TamanhoDaBarraDeTitulo,FallbackValue=42}"/>
+                                        <!--Conteudo que usario vai Mecher-->
+                                    <RowDefinition Height="*"/>
+                                </Grid.RowDefinitions>
+                                <!--Configurando a barra de Titulos-->
+                                <Grid Grid.Column="0" Panel.ZIndex="1">
+                                    <Grid.ColumnDefinitions>
+                                        <!--Titulo-->
+                                        <ColumnDefinition Width="*"/>
+                                        <!--Botãoes da Janela-->
+                                        <ColumnDefinition Width="Auto"/>
+                                    </Grid.ColumnDefinitions>
+                                    <!--Titulo-->
+                                    
+                                    <TextBlock FontSize="15" Foreground="#686868" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="0">Open Libre</TextBlock>
+                                    
+                                    <!--Butões do Windos-->
+                                    <StackPanel Orientation="Horizontal" Grid.Column="1">
+                                        <!--Botão Minimizar-->
+                                        <Button Command="{Binding Comando_Minimizar}" Content="_" Style="{StaticResource BotãoDoWindows}"></Button>
+                                        <!--Botão Maximizar-->
+                                        <Button Command="{Binding Comando_Maximizar}" Content="[ ]" Style="{StaticResource BotãoDoWindows}"></Button>
+                                        <!--Botão Fechar-->
+                                        <Button Command="{Binding Comando_Fechar}" Content="X" Style="{StaticResource BotãoFechar}"></Button>
+                                        
+                                    </StackPanel>
+                                </Grid>
+                               
+                                <!--Model View Da Janela ou Conteudo-->
+                                <Border Grid.Row="2" CornerRadius="10">
+                                    <ContentPresenter Content="{TemplateBinding Content}" />
+                                </Border>
+
+                            </Grid>
+
+                        </Grid>
+                      
+                     </Border>
+                    </ControlTemplate>
+
+
+                </Setter.Value>
+
+            </Setter>
+
+        </Style>
+        
+    </Window.Resources>
+
+
+    <WindowChrome.WindowChrome>
+        <WindowChrome 
+         ResizeBorderThickness="{Binding RedimensionamentoBordaThickness}"
+     
+         CaptionHeight="{Binding TamanhoDaBarraDeTitulo}"
+         GlassFrameThickness="0"
+            CornerRadius="0"/>
+    </WindowChrome.WindowChrome>
+    <Grid Background="#fefefe">
+        <Frame x:Name="MainFrame" NavigationUIVisibility="Hidden" Content="{Binding Pagina_Atual,Converter={local:AppConversao}}"/>
+    </Grid>
+</Window>
